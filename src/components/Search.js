@@ -23,13 +23,13 @@ function Search() {
     <>
       <form className="form" onSubmit={searchMovies}>
         <label htmlFor="query" className="label">
-          Movie name
+          Movie name:
         </label>
         <input
           className="input"
           type="text"
           name="query"
-          placeholder="search"
+          placeholder="enter movie name"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />

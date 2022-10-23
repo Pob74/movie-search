@@ -3,7 +3,7 @@ import Search from "./components/Search"
 function App() {
   return (
     <div className="container">
-      <h1 className="title">React Movie Search</h1>
+      <h1 className="title">MOVIE SEARCH</h1>
       <Search />
     </div>
   )
