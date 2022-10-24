@@ -1,5 +1,5 @@
 import { useState } from "react"
-import MovieCard from "./MovieCard"
+import MovieCard from "../components/MovieCard"
 
 function Search() {
   const [query, setQuery] = useState("")
@@ -14,6 +14,7 @@ function Search() {
       const res = await fetch(url)
       const data = await res.json()
       setMovies(data.results)
+      console.log(data.results)
     } catch (error) {
       console.error(error)
     }
@@ -21,6 +22,7 @@ function Search() {
 
   return (
     <>
+      <h1 className="title">MOVIE SEARCH</h1>
       <form className="form" onSubmit={searchMovies}>
         <label htmlFor="query" className="label">
           Movie name:

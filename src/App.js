@@ -1,10 +1,22 @@
-import Search from "./components/Search"
+import { Link, Route, Routes } from "react-router-dom"
+import Search from "./pages/Search"
+import Home from "./pages/Home"
 
 function App() {
   return (
     <div className="container">
-      <h1 className="title">MOVIE SEARCH</h1>
-      <Search />
+      <nav className="nav">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/search">Search</Link>
+        </li>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/search" element={<Search />}></Route>
+      </Routes>
     </div>
   )
 }
