@@ -7,7 +7,7 @@ function App() {
     <div className="container">
       <nav className="nav">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Popular movies</Link>
         </li>
         <li>
           <Link to="/search">Search</Link>

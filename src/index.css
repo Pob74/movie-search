@@ -35,13 +35,24 @@ small {
   max-width: 1000px;
   padding: 40px;
 }
-/* .nav {
-  border: 1px solid red;
+.nav {
   display: flex;
+  justify-content: space-around;
   font-size: 1.5rem;
+  font-weight: 800;
   text-transform: uppercase;
-  
-} */
+}
+.nav li {
+  list-style-type: none;
+
+  padding: 1em 2em;
+  background-color: rgb(229, 225, 225);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.nav li a {
+  text-decoration: none;
+}
 
 .title {
   font-size: 4.4rem;
